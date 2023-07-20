@@ -28,7 +28,8 @@ export const containsFilterState = atom({
 export const filterUsers = selector({
   key: 'filterUsers',
   get: ({ get }) => {
-    if (get(containsFilterState).length === 0) {
+    let containsFilter = get(containsFilterState);
+    if (containsFilter.length === 0) {
       return get(listUserFilterState);
     }
     let listFilterUser = get(listUserFilterState).filter((user) => {
