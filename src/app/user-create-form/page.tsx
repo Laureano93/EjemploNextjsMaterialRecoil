@@ -17,15 +17,15 @@ export default function UserCreateFormPage() {
         return acumulator > currentValue ? acumulator : currentValue;
       }).id + 1;
 
-    const lista: UserModel[] = [];
+    const list: UserModel[] = [];
 
-    listUsers.forEach((user) => lista.push(user));
+    listUsers.forEach((user) => list.push(user));
 
-    lista.push(newUser);
+    list.push(newUser);
 
-    SetUserState(lista);
+    SetUserState(list);
 
-    router.push('/listuser');
+    router.push('/user-list');
   }
   return (
     <Box component={'form'} sx={{ marginTop: '63px' }}>
