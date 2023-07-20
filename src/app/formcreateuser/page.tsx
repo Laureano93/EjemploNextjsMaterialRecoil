@@ -2,7 +2,6 @@
 import { listUserFilterState } from '@/States/ListUserState/listUserState';
 import { UserModel } from '@/models/userModel';
 import { Box, Button, TextField } from '@mui/material';
-import React from 'react';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { useRouter } from 'next/navigation';
 
