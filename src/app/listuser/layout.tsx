@@ -1,16 +1,9 @@
-
-import { RecoilRoot } from "recoil"
+import { RecoilRoot } from 'recoil';
 
 export default function ListUserLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return (
-    <>
-      {children}
-
-    </>
-
-  )
+  return <>{children}</>;
 }

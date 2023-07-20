@@ -1,22 +1,18 @@
-'use client'
-import { RecoilRoot } from "recoil"
+'use client';
+import { RecoilRoot } from 'recoil';
 
 export default function RootLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode
+  children: React.ReactNode;
 }) {
-    return (
-        <>
-            <html>
-                <body>
-                    <RecoilRoot>
-                        {children}
-                    </RecoilRoot>
-                </body>
-            </html>
-
-        </>
-
-    )
+  return (
+    <>
+      <html>
+        <body>
+          <RecoilRoot>{children}</RecoilRoot>
+        </body>
+      </html>
+    </>
+  );
 }
