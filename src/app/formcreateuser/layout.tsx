@@ -1,5 +1,4 @@
 import { Grid } from '@mui/material';
-import { RecoilRoot } from 'recoil';
 
 export default function FormCreateUserLayout({
   children,
