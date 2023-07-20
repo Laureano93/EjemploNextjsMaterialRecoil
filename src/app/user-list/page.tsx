@@ -5,8 +5,8 @@ import {
   containsFilterState,
   filterUsers,
   listUserFilterState,
-} from '@/states/list-user-state/list-user-state';
-import { getListUsers } from '@/services/list-user-service';
+} from '@/states/user-list-state/user-list-state';
+import { getListUsers } from '@/services/user-list-service';
 import {
   Box,
   Button,
@@ -18,7 +18,7 @@ import {
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useRouter } from 'next/navigation';
 
-export default function ListUserPage() {
+export default function UserListPage() {
   const [contains, setContains] = useRecoilState(containsFilterState);
   const router = useRouter();
   const setListFilterUser = useSetRecoilState(listUserFilterState);

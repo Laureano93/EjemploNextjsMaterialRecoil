@@ -1,11 +1,11 @@
 'use client';
-import { listUserFilterState } from '@/states/list-user-state/list-user-state';
+import { listUserFilterState } from '@/states/user-list-state/user-list-state';
 import { UserModel } from '@/models/user-model';
 import { Box, Button, TextField } from '@mui/material';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { useRouter } from 'next/navigation';
 
-export default function FormCreateUserPage() {
+export default function UserCreateFormPage() {
   const router = useRouter();
   const SetUserState = useSetRecoilState(listUserFilterState);
   const listUsers = useRecoilValue(listUserFilterState);

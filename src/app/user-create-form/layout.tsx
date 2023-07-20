@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 
-export default function FormCreateUserLayout({
+export default function UserCreateFormLayout({
   children,
 }: {
   children: React.ReactNode;
