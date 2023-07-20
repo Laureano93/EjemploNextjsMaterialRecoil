@@ -7,12 +7,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <html>
-        <body>
-          <RecoilRoot>{children}</RecoilRoot>
-        </body>
-      </html>
-    </>
+    <html>
+      <body>
+        <RecoilRoot>{children}</RecoilRoot>
+      </body>
+    </html>
   );
 }

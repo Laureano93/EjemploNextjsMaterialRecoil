@@ -28,33 +28,31 @@ export default function FormCreateUserPage() {
     router.push('/listuser');
   }
   return (
-    <>
-      <Box component={'form'} sx={{ marginTop: '63px' }}>
-        <TextField
-          type='text'
-          size='small'
-          sx={{ ml: 2 }}
-          label='Email'
-          onChange={(e) => (newUser.email = e.target.value)}
-        />
-        <TextField
-          type='text'
-          label='Nombre'
-          sx={{ ml: 2 }}
-          size='small'
-          onChange={(e) => (newUser.first_name = e.target.value)}
-        />
-        <TextField
-          type='text'
-          size='small'
-          sx={{ ml: 2 }}
-          label='Apellidos'
-          onChange={(e) => (newUser.last_name = e.target.value)}
-        />
-        <Button onClick={() => createUser()} sx={{ ml: 2 }}>
-          Crear Usuario
-        </Button>
-      </Box>
-    </>
+    <Box component={'form'} sx={{ marginTop: '63px' }}>
+      <TextField
+        type='text'
+        size='small'
+        sx={{ ml: 2 }}
+        label='Email'
+        onChange={(e) => (newUser.email = e.target.value)}
+      />
+      <TextField
+        type='text'
+        label='Nombre'
+        sx={{ ml: 2 }}
+        size='small'
+        onChange={(e) => (newUser.first_name = e.target.value)}
+      />
+      <TextField
+        type='text'
+        size='small'
+        sx={{ ml: 2 }}
+        label='Apellidos'
+        onChange={(e) => (newUser.last_name = e.target.value)}
+      />
+      <Button onClick={() => createUser()} sx={{ ml: 2 }}>
+        Crear Usuario
+      </Button>
+    </Box>
   );
 }
