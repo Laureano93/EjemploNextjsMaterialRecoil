@@ -14,6 +14,7 @@ import {
   FormLabel,
   Grid,
   TextField,
+  Typography,
 } from '@mui/material';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useRouter } from 'next/navigation';
@@ -65,7 +66,7 @@ export default function UserListPage() {
         justifyContent='center'
         width={'100%'}
         sx={{ marginBottom: '20px' }}>
-        <h1>Lista Usuarios</h1>
+        <Typography variant='h3'>Lista Usuarios</Typography>
         <Grid
           container
           spacing={0}
