@@ -1,6 +1,6 @@
 import { JsonConvert } from 'json2typescript';
-import axiosInstance from '@/utils/axios/axiosConfig';
-import { UserModel } from '@/models/userModel';
+import axiosInstance from '@/utils/axios/axios-config';
+import { UserModel } from '@/models/user-model';
 
 export async function getListUsers(): Promise<UserModel[] | []> {
   let listausuarios: UserModel[] = [];

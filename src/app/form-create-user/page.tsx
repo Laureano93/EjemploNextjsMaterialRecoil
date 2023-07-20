@@ -1,6 +1,6 @@
 'use client';
-import { listUserFilterState } from '@/States/ListUserState/listUserState';
-import { UserModel } from '@/models/userModel';
+import { listUserFilterState } from '@/states/list-user-state/list-user-state';
+import { UserModel } from '@/models/user-model';
 import { Box, Button, TextField } from '@mui/material';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { useRouter } from 'next/navigation';

@@ -5,8 +5,8 @@ import {
   containsFilterState,
   filterUsers,
   listUserFilterState,
-} from '@/States/ListUserState/listUserState';
-import { getListUsers } from '@/services/listUserService';
+} from '@/states/list-user-state/list-user-state';
+import { getListUsers } from '@/services/list-user-service';
 import {
   Box,
   Button,

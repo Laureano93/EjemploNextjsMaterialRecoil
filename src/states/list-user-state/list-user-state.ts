@@ -1,4 +1,4 @@
-import { UserModel } from '@/models/userModel';
+import { UserModel } from '@/models/user-model';
 import { atom, selector } from 'recoil';
 import { recoilPersist } from 'recoil-persist';
 
