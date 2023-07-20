@@ -30,13 +30,12 @@ export const filterUsers = selector({
   get: ({ get }) => {
     if (get(containsFilterState).length === 0) {
       return get(listUserFilterState);
-    } else {
-      let listFilterUser = get(listUserFilterState).filter((user) => {
-        if (user.first_name.includes(get(containsFilterState))) {
-          return user;
-        }
-      });
-      return listFilterUser;
     }
+    let listFilterUser = get(listUserFilterState).filter((user) => {
+      if (user.first_name.includes(get(containsFilterState))) {
+        return user;
+      }
+    });
+    return listFilterUser;
   },
 });

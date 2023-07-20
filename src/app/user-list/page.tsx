@@ -74,7 +74,7 @@ export default function UserListPage() {
           alignItems='center'
           justifyContent='center'>
           <Button
-            onClick={() => router.push('/formcreateuser')}
+            onClick={() => router.push('/user-create-form')}
             variant='contained'>
             Crear Usuario
           </Button>
