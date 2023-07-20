@@ -1,5 +1,5 @@
 import { JsonConvert } from 'json2typescript';
-import axiosInstance from '@/app/utils/axios/axiosConfig';
+import axiosInstance from '@/utils/axios/axiosConfig';
 import { UserModel } from '@/models/userModel';
 
 export async function getListUsers(): Promise<UserModel[] | []> {
